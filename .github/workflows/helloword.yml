@@ -1,0 +1,17 @@
+# Workflow 的名稱，可以不用和檔案名稱一樣
+name: hello-world
+
+# 觸發的事件 (event) ，這裡設定為 push
+on: push
+
+# 第二層的 job
+jobs:
+  # job 的名稱
+  hello-world-job:
+    # 必須要設定運行 CI 指令的 runner
+    runs-on: ubuntu-latest
+    # 第三層的 step
+    steps:
+      # 第四層，需要執行的 action
+      - run: |
+          echo hello world
