@@ -2,7 +2,7 @@
 name: hello-world
 
 # 觸發的事件 (event) ，這裡設定為 push
-on: push
+on: workflow_dispatch
 
 # 第二層的 job
 jobs:
